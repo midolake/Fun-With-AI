@@ -9,8 +9,8 @@ const Response = () => {
     <div>
       <h2>Responses</h2>
       <div className='response-body'>
-        {prompts.map(prompt => (
-          <Entry prompt={prompt} key={prompt}/>
+        {prompts.map((prompt,index) => (
+          <Entry prompt={prompt} key={index}/>
         ))}
       </div>
 

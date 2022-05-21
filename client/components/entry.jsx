@@ -5,11 +5,11 @@ const Entry = ({prompt}) => {
   return(
     <div>
       <div className='prompt-area'>
-        <span>Prompt: {prompt.p}</span>
+        <span>Prompt: {prompt ? prompt.p : null}</span>
       </div>
 
       <div className='Response-area'>
-        <span>Response: {prompt.res}</span>
+        <span>Response: {prompt ? prompt.res : null}</span>
       </div>
 
     </div>
