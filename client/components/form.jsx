@@ -4,7 +4,7 @@ import { Context } from '../context/context.js';
 const Form = () => {
   return(
     <div>
-      <p>Enter prompt</p>
+      <h4>Enter prompt</h4>
       <div className="enter">
         <textarea rows="10" cols="40"></textarea>
       </div>
