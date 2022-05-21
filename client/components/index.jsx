@@ -6,7 +6,6 @@ const { Configuration, OpenAIApi } = require("openai");
 
 const APP = () => {
   const [prompts, setPrompt] = useState([{p:'hello', res:'whats up'}, {p:'today', res:'happy'}]);
-  //const [responses, setResponse] = useState([]);
 
   const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
@@ -15,7 +14,7 @@ const APP = () => {
 
   const handleEnter = async (event) => {
     event.preventDefault();
-    let data = event.target[0].value
+    let data = event.target[0].value;
     //console.log('event:', event.target[0].value);
     const response = await openai.createCompletion("text-curie-001", {
       prompt: data,
@@ -25,7 +24,7 @@ const APP = () => {
       frequency_penalty: 0.0,
       presence_penalty: 0.0,
     });
-    console.log('this is the response:', data, response);
+    console.log('this is the response:', data, response.data.choices[0].text, response.data);
   };
 
   return(
