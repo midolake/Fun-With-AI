@@ -1,4 +1,6 @@
 const path = require('path');
+const webpack = require('webpack');
+//const dotenv = require('dotenv').config({ path: __dirname + '/.env' });
 
 const SRC_DIR = path.join(__dirname,'client');
 const OUT_DIR = path.join(__dirname, 'public');
@@ -26,5 +28,11 @@ module.exports= {
     ]
   },
 
-  mode: 'development' //to enable defaults for each environment.
+  mode: 'development', //to enable defaults for each environment.
+
+  plugins: [
+    new webpack.ProvidePlugin({
+           process: 'process/browser',
+    }),
+  ],
 }
