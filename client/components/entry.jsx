@@ -1,15 +1,15 @@
 import React, {useState, useEffect, useContext} from 'react';
 import { Context } from '../context/context.js';
 
-const Entry = () => {
+const Entry = ({prompt}) => {
   return(
     <div>
       <div className='prompt-area'>
-        <span>Prompt: </span>
+        <span>Prompt: {prompt.p}</span>
       </div>
 
       <div className='Response-area'>
-        <span>Response: </span>
+        <span>Response: {prompt.res}</span>
       </div>
 
     </div>

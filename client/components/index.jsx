@@ -4,6 +4,9 @@ import Form from './form.jsx';
 import Response from './response.jsx';
 
 const APP = () => {
+  const [prompts, setPrompt] = useState([{p:'hello', res:'whats up'}]);
+  //const [responses, setResponse] = useState([]);
+
 
   return(
     <div>
@@ -16,7 +19,9 @@ const APP = () => {
       </div>
 
       <div className="response-section">
-        <Response />
+        <Context.Provider value={{prompts}}>
+          <Response />
+        </Context.Provider>
       </div>
 
     </div>
