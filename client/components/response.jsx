@@ -1,6 +1,8 @@
 import React, {useState, useEffect, useContext} from 'react';
 import { Context } from '../context/context.js';
 import Entry from './entry.jsx';
+import './styles.css';
+
 
 const Response = () => {
   const { prompts } = useContext(Context);

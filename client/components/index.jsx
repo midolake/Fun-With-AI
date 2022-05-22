@@ -3,6 +3,7 @@ import { Context } from '../context/context.js';
 import Form from './form.jsx';
 import Response from './response.jsx';
 const { Configuration, OpenAIApi } = require("openai");
+import './styles.css';
 
 const APP = () => {
   const [prompts, setPrompt] = useState(() => {
@@ -56,9 +57,9 @@ const APP = () => {
   };
 
   return(
-    <div>
+    <div className='body'>
       <div className="title">
-        <h1>Fun With AI</h1>
+        <h1>Fun With <span className='deco'>AI</span></h1>
       </div>
 
       <div className="form-section">

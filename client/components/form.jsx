@@ -1,5 +1,7 @@
 import React, {useState, useEffect, useContext} from 'react';
 import { Context } from '../context/context.js';
+import './styles.css';
+
 
 const Form = () => {
 
@@ -13,7 +15,7 @@ const Form = () => {
           <textarea rows="10" cols="40"></textarea>
         </div>
         <div className="button-section">
-          <button type="submit">Submit</button>
+          <button className="button-5" type="submit">Submit</button>
         </div>
       </form>
     </div>
