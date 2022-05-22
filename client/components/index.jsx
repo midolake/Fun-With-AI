@@ -50,7 +50,7 @@ const APP = () => {
     //let pack = {p: question, res: response.data.choices[0].text};
     //console.log('pack: ',pack);
     let newArray = Array.from(prompts).slice();
-    newArray.push({p: question, res: response.data.choices[0].text});
+    newArray.unshift({p: question, res: response.data.choices[0].text});
 
     setPrompt(newArray);
     //console.log('this is the response:', question, response.data.choices[0].text);
