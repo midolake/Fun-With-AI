@@ -2,8 +2,11 @@
 An app that sends plain text prompts to the OpenAI API and displays the results in a list.
 
 ## Getting Started
+```
 npm install
-
+npm run watch
+```
+then create an .env file and add your own key!
 
 ## Contribute by: Shuwen Liang [![Linkedin: LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/ryangrantrhoads/)](https://www.linkedin.com/in/shuwen-liang-855067194/) [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white&link=https://github.com/rgrhoads)](https://github.com/midolake)
 

@@ -12,7 +12,7 @@ const Form = () => {
       <h4>Enter prompt</h4>
       <form onSubmit={(event) => handleEnter(event)}>
         <div className="enter">
-          <textarea rows="10" cols="40"></textarea>
+          <textarea rows="10" cols="40" placeholder='Example: Who is Batman?'></textarea>
         </div>
         <div className="button-section">
           <button className="button-5" type="submit">Submit</button>

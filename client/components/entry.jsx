@@ -8,13 +8,13 @@ const Entry = ({prompt}) => {
     <div className='entry-block'>
 
       <div className='prompt-area'>
-        <span className='def'> Prompt:  </span>
-        <span className='explain'> {prompt ? prompt.p : null}</span>
+        <div className='def'> Prompt: </div>
+        <div className='explain'> {prompt ? prompt.p : null}</div>
       </div>
 
       <div className='Response-area'>
-        <span className='def'>Response: </span>
-        <span className='explain'>{prompt ? prompt.res : null}</span>
+        <div className='def'>Response: </div>
+        <div className='explain'>{prompt ? prompt.res : null}</div>
       </div>
 
     </div>
